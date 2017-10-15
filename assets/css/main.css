@@ -972,7 +972,7 @@ body {
       font-size: 16px;
       font-weight: 700;
       text-align: center;
-      border: 2px solid #fff;
+      border: 2px solid #0c0c0c;
       cursor: pointer;
       transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out; }
       .work-request--options label svg {
@@ -1011,7 +1011,7 @@ body {
       .work-request--information input[type="text"]:focus,
       .work-request--information input[type="email"]:focus {
         outline: none;
-        background-color: #0c0c0c; }
+        background-color: #fff; }
     .work-request--information label {
       position: absolute;
       top: 0;
