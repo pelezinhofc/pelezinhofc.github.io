@@ -346,7 +346,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #fff; }
+    color: #0c0c0c; }
     .header--logo p {
       margin: 0 0 0 10px;
       font-size: 16px;
@@ -413,7 +413,7 @@ body {
   .side-nav > li {
     position: relative;
     top: -5px;
-    color: #fff;
+    color: #0c0c0c;
     font-size: 6px;
     cursor: pointer; }
     .side-nav > li span {
@@ -531,7 +531,7 @@ body {
       color: #282828;
       transition: color 0.2s ease-in-out; }
       .intro--options > a:hover {
-        color: #fff; }
+        color: #282828; }
     .intro--options h3 {
       font-size: 16px;
       text-transform: uppercase; }
