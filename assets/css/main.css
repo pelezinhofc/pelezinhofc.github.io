@@ -860,7 +860,7 @@ body {
   height: 100%;
   background-image: url("../img/campoPelezao.JPG");
   background-position: center;
-  background-size: cover;
+  background-size: 80%;
   background-repeat: no-repeat; }
   .contact--lockup {
     position: relative;
