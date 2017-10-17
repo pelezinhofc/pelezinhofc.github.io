@@ -422,8 +422,7 @@ body {
       left: 10px;
       color: #0c0c0c;
       font-size: 14px;
-      font-weight: 300;
-      opacity: 0; }
+      font-weight: 300; }
     .side-nav > li::before {
       position: absolute;
       top: 3px;
@@ -433,6 +432,7 @@ body {
       font-weight: 300; }
   .side-nav li.is-active {
     color: #053B77;
+    font-weight: 500;
     transition: color 0.4s ease-in-out; }
     .side-nav li.is-active span {
       opacity: 1;
