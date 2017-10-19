@@ -974,7 +974,8 @@ body {
       display: none; }
       .work-request--options input[type="checkbox"]:checked + label {
         background-color: #053B77;
-        border-color: #053B77; }
+        border-color: #053B77;
+        color: #fff; }
         .work-request--options input[type="checkbox"]:checked + label svg {
           width: 15px; }
   .work-request--information {
