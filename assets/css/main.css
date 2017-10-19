@@ -935,7 +935,8 @@ body {
     text-transform: uppercase;
     background-color: #053B77;
     border: none;
-    border-radius: 0; }
+    border-radius: 0;
+    color: #fff; }
     .work-request input[type="submit"]:focus {
       outline: none; }
   .work-request--options {
