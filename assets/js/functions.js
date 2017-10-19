@@ -180,11 +180,11 @@ $( document ).ready(function() {
     $('.slider--prev, .slider--next').click(function() {
 
       var $this = $(this),
-          curLeft = $('.slider').find('.slider--item-left'),
+          curLeft = $('.slider').find('.slider--item-left').first(),
           curLeftPos = $('.slider').children().index(curLeft),
           curCenter = $('.slider').find('.slider--item-center'),
           curCenterPos = $('.slider').children().index(curCenter),
-          curRight = $('.slider').find('.slider--item-right'),
+          curRight = $('.slider').find('.slider--item-right').first(),
           curRightPos = $('.slider').children().index(curRight),
           totalWorks = $('.slider').children().length,
           $left = $('.slider--item-left'),
