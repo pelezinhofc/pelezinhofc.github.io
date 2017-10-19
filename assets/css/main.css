@@ -506,7 +506,7 @@ body {
         fill: #fff; }
     .intro--banner img {
       position: absolute;
-      bottom: 21px;
+      bottom: 60px;
       right: -12px; }
   .intro--options {
     display: flex;
