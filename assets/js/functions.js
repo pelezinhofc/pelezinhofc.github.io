@@ -178,7 +178,6 @@ $( document ).ready(function() {
   function workSlider() {
 
     $('.slider--prev, .slider--next').click(function() {
-
       var $this = $(this),
           curLeft = $('.slider').find('.slider--item-left'),
           curLeftPos = $('.slider').children().index(curLeft),
@@ -191,10 +190,52 @@ $( document ).ready(function() {
           $center = $('.slider--item-center'),
           $right = $('.slider--item-right'),
           $item = $('.slider--item');
+      /*
+      var $this = $(this);
+      var totalWorks = $('.slider').children().length;
+      var curCenter = $('.slider').find('.slider--item-center');
+      var curCenterPos = $('.slider').children().index(curCenter);
+
+      if (curCenterPos != 0 && curCenterPos != totalWorks - 1)
+      {
+        curRightPos = curCenterPos + 1;
+        curLeftPos = curCenterPos - 1;
+      }
+      if (curCenterPos == 0)
+      {
+        curRightPos = curCenterPos + 1;
+        curLeftPos = totalWorks - 1;
+      }
+      if (curCenterPos == totalWorks - 1)
+      {
+        curRightPos = 0;
+        curLeftPos = curCenterPos - 1;
+      }
+
+      $left = curCenter.prev();
+      $center = curCenter;
+      $right = curCenter.next();
+      $item = $('.slider--item');
+      */
 
       $('.slider').animate({ opacity : 0 }, 400);
 
       setTimeout(function(){
+      /*  
+
+      if ($this.hasClass('slider--next')) {
+          $left.prev().addClass('slider--item-left');
+          $left.removeClass('slider--item-left').addClass('slider--item-center');
+          $center.removeClass('slider--item-center').addClass('slider--item-right');
+          $right.removeClass('slider--item-right');
+      }
+      else{
+          $right.next().addClass('slider--item-right');
+          $right.removeClass('slider--item-right').addClass('slider--item-center');
+          $center.removeClass('slider--item-center').addClass('slider--item-left');
+          $left.removeClass('slider--item-left');
+      }
+      */
 
       if ($this.hasClass('slider--next')) {
         if (curLeftPos < totalWorks - 1 && curCenterPos < totalWorks - 1 && curRightPos < totalWorks - 1) {
@@ -244,7 +285,6 @@ $( document ).ready(function() {
           }
         }
       }
-
     }, 400);
 
     $('.slider').animate({ opacity : 1 }, 400);
